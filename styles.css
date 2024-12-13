@@ -1,0 +1,82 @@
+/* Save this as styles.css */
+body {
+    background-image: url(Back.png);
+    -webkit-background-size: cover;
+}
+
+/* piewszy akapit który pisze break */
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid lightblue;
+    padding: 10px;
+    background-color: #200129;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*3 kolumny i cała ramka lub całość */
+table, td {
+    border-color: white;
+    border: 5px solid grey;
+    border-collapse: separate;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 20%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border-color: white;
+    border: 5px solid grey;
+    border-collapse: separate;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 20%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 251, 6);
+    border-bottom-style: dashed;
+}
+
+table {
+    font-size: 70px;
+    border-color: grey;
+    padding: 40px;
+    margin-bottom: 10%;
+    width: 90%;
+}
+
+/*wiersze i ich wnętrze */
+a {
+    display: block;
+    content: " ";
+}
+
+a:link {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: lightcoral;
+    text-decoration: none;
+}
