@@ -17,7 +17,22 @@ h1 {
 }
 
 /*3 kolumny i cała ramka lub całość */
-table, td {
+table {
+    font-size: 70px;
+    border-color: grey;
+    padding: 40px;
+    margin-bottom: 10%;
+    width: 90%;
+    border: 5px solid grey;
+    border-collapse: separate;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
     border-color: white;
     border: 5px solid grey;
     border-collapse: separate;
@@ -29,15 +44,14 @@ table, td {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    background: rgba(0, 0, 0, 0.6);
 }
-td {
-    background: rgba(0, 0, 0, 0.6)
-}
+
 th {
     border-color: white;
     border: 5px solid grey;
     border-collapse: separate;
-    color: white;
+    color: rgb(255, 251, 6);
     text-align: center;
     padding: 5px;
     border-radius: 30px;
@@ -45,17 +59,9 @@ th {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    color: rgb(255, 251, 6);
     border-bottom-style: dashed;
 }
 
-table {
-    font-size: 70px;
-    border-color: grey;
-    padding: 40px;
-    margin-bottom: 10%;
-    width: 90%;
-}
 
 /*wiersze i ich wnętrze */
 a {
