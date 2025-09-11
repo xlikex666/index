@@ -8,7 +8,8 @@
 <body>
     <h1>
         Paste YouTube link:
-        <input type="text" id="ytLink" placeholder="https://www.youtube.com/watch?v=xxxx">
+        <input type="text" id="ytLink" placeholder="https://www.youtube.com/watch?v=xxxx" 
+            onkeydown="if(event.key === 'Enter'){ convertLink(); }">
         <button onclick="convertLink()">Go</button>
     </h1>
 
@@ -78,3 +79,4 @@
 
 </body>
 </html>
+
