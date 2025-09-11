@@ -5,15 +5,44 @@ body {
 }
 
 /* piewszy akapit który pisze break */
-h1 {
-    color: white;
-    font-size: 50px;
+h1 { 
+    color: lightblue;
+    font-size: 40px;
     text-align: center;
     border: 3px solid lightblue;
-    padding: 10px;
+    padding: 20px;
     background-color: #200129;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* make the text box bigger */
+h1 input[type="text"] {
+    font-size: 24px;
+    padding: 10px 15px;
+    color: lightblue;
+    width: 40%;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+}
+
+/* make the button bigger */
+h1 button {
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+    background-color: #40025a;
+    color: white;
+    cursor: pointer;
+}
+
+/* hover effect for button */
+h1 button:hover {
+    background-color: #60037a;
 }
 
 /*3 kolumny i cała ramka lub całość */
