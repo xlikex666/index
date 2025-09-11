@@ -3,10 +3,14 @@
 <head>
     <link rel="icon" href="https://i.pinimg.com/550x/93/90/e2/9390e267c28522bbb14ff0c20b9e586a.jpg" type="image/jpeg">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <h1>Break ?</h1>
+    <h1>
+        Paste YouTube link:
+        <input type="text" id="ytLink" placeholder="https://www.youtube.com/watch?v=xxxx">
+        <button onclick="convertLink()">Go</button>
+    </h1>
 
     <table id="menu">
         <tr>
@@ -45,9 +49,32 @@
             <td><a href="https://rule34video.com/">rule34video</a></td>
         </tr>
     </table>
+
+    <script>
+    function convertLink() {
+        let url = document.getElementById("ytLink").value.trim();
+        let videoId = null;
+
+        // Match normal YouTube link
+        let match = url.match(/v=([a-zA-Z0-9_-]{11})/);
+        if (match) {
+            videoId = match[1];
+        }
+
+        // Match youtu.be short link
+        let short = url.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
+        if (short) {
+            videoId = short[1];
+        }
+
+        if (videoId) {
+            let embedUrl = "https://www.youtube-nocookie.com/embed/" + videoId;
+            window.open(embedUrl, "_blank"); // 👈 opens in new tab/window
+        } else {
+            alert("Invalid YouTube link!");
+        }
+    }
+</script>
+
 </body>
 </html>
-
-
-
-
